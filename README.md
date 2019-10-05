@@ -2,7 +2,9 @@
 
 Project Name: Gdesi
 
-Project Description: 
+Project Description: Gdesi is a website used to compare prices of products with various parameters. The goal of Gdesi is to be able
+to provide the user with a list of all the different places any product can be found online, from cars to laptops and more. With the
+added convenience of being able to compare in-store and online prices as well as by location, it makes online shopping incredibly easy.
 
 Members:  Luka David,                0300134324,
           Jean-Sébastien Demers,     0300115743,
