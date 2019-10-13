@@ -6,6 +6,8 @@ Project Description: Gdesi is a website used to compare prices of products with 
 to provide the user with a list of all the different places any product can be found online, from cars to laptops and more. With the
 added convenience of being able to compare in-store and online prices as well as by location, it makes online shopping incredibly easy.
 
+Since our startup is a search engine, our product page is an example of a search on gdesi
+
 Members:  Luka David,                0300134324,
           Jean-Sébastien Demers,     0300115743,
           Ilyas Hassan,              0300119831,

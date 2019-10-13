@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ProductSearch</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+	<style type="text/css">
+
+		.searchbar {
+			margin-top: 5%;
+			margin-bottom: 1%;
+		}
+
+		#photo1, #photo2, #photo3 {
+			height: 170px;
+			margin-bottom: 2%;
+		}
+
+		body {
+			font-family: Lato;
+		}
+
+		.buttons {
+			margin-bottom: 2%;
+		}
+
+	
+
+
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">gdesi</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Team.html">The Team</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="Product_Features_Page.html">Product Search</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+      	<li><a href="#">Log in <i class="fas fa-user"></i></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Sign up <i class="fas fa-user-plus"></i></a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+<div class="container-fluid searchbar">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-6">
+			<form action="/hms/accommodations" method="GET"> 
+			  <div class="row">
+			    <div class="col-xs-6 col-md-12">
+			      <div class="input-group">
+			        <input type="text" class="form-control" placeholder="What are you looking for?" id="txtSearch"/>
+			        <div class="input-group-btn">
+			          <button class="btn btn-primary" type="submit">
+			            <span class="glyphicon glyphicon-search"></span>
+			          </button>
+			        </div>
+			      </div>
+			    </div>
+			  </div>
+			</form>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
+
+<div class="container-fluid buttons">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-5">
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Mileage <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+			    <li><a href="#">Action</a></li>
+			    <li><a href="#">Another action</a></li>
+			    <li><a href="#">Something else here</a></li>
+			    <li role="separator" class="divider"></li>
+			    <li><a href="#">Separated link</a></li>
+			  </ul>
+			</div>
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Seller Rating <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+			    <li><a href="#">Action</a></li>
+			    <li><a href="#">Another action</a></li>
+			    <li><a href="#">Something else here</a></li>
+			    <li role="separator" class="divider"></li>
+			    <li><a href="#">Separated link</a></li>
+			  </ul>
+			</div>
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Year <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+			    <li><a href="#">Action</a></li>
+			    <li><a href="#">Another action</a></li>
+			    <li><a href="#">Something else here</a></li>
+			    <li role="separator" class="divider"></li>
+			    <li><a href="#">Separated link</a></li>
+			  </ul>
+			</div>
+			<div class="btn-group">
+			  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    Price <span class="caret"></span>
+			  </button>
+			  <ul class="dropdown-menu">
+			    <li><a href="#">Action</a></li>
+			    <li><a href="#">Another action</a></li>
+			    <li><a href="#">Something else here</a></li>
+			    <li role="separator" class="divider"></li>
+			    <li><a href="#">Separated link</a></li>
+			  </ul>
+			</div>
+		</div>
+		<div class="col-md-1">
+			<button type="button" class="btn btn-success">Refine Search</button>
+		</div>
+		<div class="col-md-3"></div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/3/36/2017_Honda_Civic_VTi-S_sedan_%282018-10-29%29_01.jpg" id="photo1">
+				<p>Mileage</p>
+				<p>Seller Rating</p>
+				<p>Year</p>
+				<p>Price</p>
+				<input type="checkbox" name="photo1+">
+				<input type="checkbox" name="photo1-">
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="https://www.primehonda128.com/assets/stock/colormatched_01/white/640/cc_2019hoc02_01_640/cc_2019hoc020087_01_640_wx.jpg?height=400" id="photo2">
+				<p>Mileage</p>
+				<p>Seller Rating</p>
+				<p>Year</p>
+				<p>Price</p>
+				<input type="checkbox" name="photo1+">
+				<input type="checkbox" name="photo1-">
+			</div>
+		</div>
+		<div class="col-lg-4 col-sm-6">
+			<div class="thumbnail">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/8/86/2017_Honda_Civic_EX_VTEC_CVT_1.0_Front.jpg" id="photo3">
+				<p>Mileage</p>
+				<p>Seller Rating</p>
+				<p>Year</p>
+				<p>Price</p>
+				<input type="checkbox" name="photo1+">
+				<input type="checkbox" name="photo1-">
+			</div>
+		</div>
+	</div>
+</div>
+<!--
+Javascript
+-->
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
