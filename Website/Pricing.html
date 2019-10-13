@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>The Team</title>
+	<title>Pricing</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
 	<style type="text/css">
-
-		h1 {
-			margin-top: 8%;
-			font-weight: 700;
-			font-size: 3em;
-			color:white;
-		}
-		#content {
-			text-align: center;
-			text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-						 0px 8px 13px rgba(0,0,0,0.1),
-						 0px 18px 23px rgba(0,0,0,0.1);
-		}
-
-		.photos {
-			margin-top: 2%;
-		}
-
 		body {
-			background: url(https://images.pexels.com/photos/583846/pexels-photo-583846.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
-			background-size: cover;
 			font-family: Lato;
-			
+			background: url(https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80);
+			background-size: cover;
+			height:100%;
 		}
 		html {
 			height: 100%;
 		}
+		.firstdiv {
+			border: 5px outset rgba(24,94,140,0.5);
+			border-radius: 17px;
+			margin-top: 26%;
+			width: 60%;
+			height: 70vh;
+			margin-left: 55%;
 
-		#photo1, #photo2, #photo3, #photo4, #photo5, #photo6 {
-			height: 200px;
 		}
-		p {
-			margin-top: 1%;
+		.seconddiv {
+			border: 5px outset rgba(24,94,140,0.5);
+			border-radius: 17px;
+			width: 60%;
+			height: 70vh;
+			margin-top: 26%;
+			margin-left: 15%;
+		}
+		.title {
+			text-align: center;
+			color: black;
+			font-size: 2em;
+			margin-top: 3%;
+		}
+		.bulletpoints {
+			font-size: 1.3em;
+			margin-left: 2%;
+			margin-right: 2%;
+			margin-top: 5%;
+		}
+		.price1 {
+			text-align: center;
+			font-size: 1.5em;
+			margin-top: 80%;
+
+		}
+		.price2 {
+			text-align: center;
+			font-size: 1.5em;
+			margin-top: 38%;
+
+		}
+		.button {
+			text-align: center;
+			margin-top: 10%;
 		}
 	</style>
 </head>
@@ -61,8 +81,8 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="Home.html">Home</a></li>
-        <li class="active"><a href="Team.html">The Team</a></li>
-        <li><a href="Pricing.html">Pricing</a></li>
+        <li><a href="Team.html">The Team</a></li>
+        <li class="active"><a href="Pricing.html">Pricing</a></li>
         <li><a href="Product_Features_Page.html">Product Search</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -75,47 +95,30 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-<h1 id="content">Meet the team responsible for bringing you gdesi</h1>
-
-<div class="container photos">
-		<div class="row">
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg" id="photo1">
-					<p>Luka David</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg" id="photo2">
-					<p>Jean-Sébastien Demers</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg" id="photo3">
-					<p>Ilyas Hassan</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg" id="photo4">
-					<p>Denis Can Tahani Kravtsov</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg" id="photo5">
-					<p>André Lacroix</p>
-				</div>
-			</div>
-			<div class="col-lg-4 col-sm-6">
-				<div class="thumbnail">
-					<img src="https://i.kym-cdn.com/entries/icons/original/000/016/546/hidethepainharold.jpg" id="photo6">
-					<p>Aliou Wade</p>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="firstdiv">
+				<p class="title">Free account</p>
+				<p class="bulletpoints">-Access to basic gdesi features</p>
+				<p class="price1">Price: 0$/month</p>
+				<div class="button">
+					<button type="button" class="btn btn-primary button">Sign up now</button>
 				</div>
 			</div>
 		</div>
+		<div class="col-md-4">
+			<div class="seconddiv">
+				<p class="title">Premium account</p>
+				<p class="bulletpoints">-Access to the gdesi Refine Search feature</p>
+				<p class="bulletpoints">-Access to a premium email service notifying you when an item falls under a certain price</p>
+				<p class="price2">Price: 1$/month</p>
+				<div class="button">
+					<button type="button" class="btn btn-primary button">Sign up now</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <!--
 Javascript
