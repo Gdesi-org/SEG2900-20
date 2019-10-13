@@ -1,0 +1,26 @@
+<<<<<<< HEAD:Structure Sketches, pitch and ideas/pitch1.0.txt
+Pitch:
+
+What would you rather do, save money or save time?
+Why not both?
+Do you remember the last time you went to a store to look for a product?
+Probably not. Now everything is online, and there's millions of websites sometimes selling the exact same thing.
+With our product, Gdesi, you can search all websites and compare all prices in one swift search.
+Compare prices, availability, location and many other parameters with our new website.
+A convient way to save time and money the next time you shop online.
+=======
+Pitch:
+
+What would you rather do, save money or save time?
+Why not both?
+Do you remember the last time you went to a store to look for a product?
+Probably not. Now everything is online, and there's millions of websites sometimes selling the exact same thing.
+With our product, Gdesi, you can search all websites and compare all prices in one swift search.
+Compare prices, availability, location and many other parameters with our new website.
+A convient way to save time and money the next time you shop online.
+
+How gdesi makes a profit:
+- Ads
+- Sponsored item slots at the top of the list when a user searches for an item
+- Subscription based service (1$ a month) that gives the user access to the refine search feature (more on that later) and acccess to an email service that sends the user a notification when an item falls under a certain price
+>>>>>>> d135a7ec4874123e1ed701449625fcf4fc6cb65c:pitch1.0.txt
