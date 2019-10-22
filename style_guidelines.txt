@@ -1,0 +1,3 @@
+At the moment, we have opted for a consistent navigation bar and a white background. Other styling guidelines will be decided in the future.
+
+Most of the pages are using bootstrap (version 3 and 4) as well as inline styling elements. Some pages have dedicated styling documents as well.
