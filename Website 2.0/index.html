@@ -21,10 +21,12 @@
 
 
       <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
 
       <!-- Navbar brand -->
-      <a class="navbar-brand" href="#">gdesi</a>
+      <a class="navbar-brand" id="navhead1" href="#">
+      	<img src="gdesi10_29.png" height="40" alt="mdb logo">
+      </a>
 
       <!-- Collapse button -->
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -38,25 +40,36 @@
         <!-- Links -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link" id="navhead2" href="#">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Search</a>
+            <a class="nav-link" id="navhead3" href="#">Search</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" id="navhead4" href="#">Pricing</a>
           </li>
 
         </ul>
         <!-- Links -->
 
-        <form class="form-inline active-cyan-4 w-50">
+        <form class="form-inline active-cyan-4 w-50" id="navhead7">
 			<input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
 				 aria-label="Search">
 			 <i class="fas fa-search" aria-hidden="true"></i>
 		</form>
+
+		<ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" id="navhead5" href="#">Sign Up <i class="fas fa-user-plus"></i>
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="navhead6" href="#">Log in <i class="fas fa-user"></i></a>
+          </li>
+        </ul>
       </div>
       <!-- Collapsible content -->
 
@@ -69,13 +82,13 @@
 	<div class="container-fluid secondnav mb-4">
 
 
-	    <div class="container">
+	    <div class="container-fluid">
 	    	<div class="row">
-	    		<div class="col-3 d-flex align-items-center">
+	    		<div class="col-3 d-flex align-items-center ml-5">
 	    			<input class="form-control form-control-sm mr-1" type="text" placeholder="Min price">
 	    			<input class="form-control form-control-sm ml-1" type="text" placeholder="Max price">
 	    		</div>
-	    		<div class="col-6">
+	    		<div class="col-5">
 		    				    		<!-- Basic dropdown -->
 					<button class="btn dropdown-toggle firstdropdown z-depth-0 mx-0 px-3" type="button" data-toggle="dropdown"
 					  aria-haspopup="true" aria-expanded="false">Seller Rating</button>
@@ -130,7 +143,7 @@
 					</div>
 					<!-- Basic dropdown -->
 	    		</div>
-	    		<div class="col-3">
+	    		<div class="col-3 ml-5">
 					<!-- Basic dropdown -->
 					<button class="btn dropdown-toggle z-depth-0 mx-0 px-3" type="button" data-toggle="dropdown"
 					  aria-haspopup="true" aria-expanded="false">Sort by</button>
@@ -143,7 +156,7 @@
 					  <a class="dropdown-item" href="#">Separated link</a>
 					</div>
 					<!-- Basic dropdown -->
-					<button type="button" class="btn btn-success p-3">Refine Search</button>
+					<button type="button" class="btn btn-success p-3">Refine Search  <i class="fas fa-search-dollar fa-lg"></i></button>
 				</div>
 	    	</div>
 	    </div>
@@ -173,27 +186,29 @@
           <div class="card-body px-2">
 
             <!--Title-->
-			<table class="table maintable mx-0 mt-0 mb-2">
-			  <tbody>
-			    <tr>
-			      <th scope="row" class="tablehead lefttable">Seller Rating</th>
-			      	<td class="tablecentertext"><span class="badge badge-pill badge-success allbadge">8.0</span></td>
-			    </tr>
-			    <tr>
-			      <th scope="row" class="tablehead lefttable">Transmission</th>
-			      <td class="tablecentertext">Automatic</td>
-			    </tr>
-			    <tr>
-			      <th scope="row" class="tablehead lefttable">Year</th>
-			      <td class="tablecentertext">2010</td>
+				<table>
+				    <tr>
+				        <th>Seller rating</th>
+				        <td><span class="badge badge-pill badge-success allbadge">8.0</span></td>
+				    </tr>
+				    <tr>
+				        <th>Transmission</th>
+				        <td>Automatic</td>
+				    </tr>
+				    <tr>
+				        <th>Year</th>
+				        <td>2010</td>
+				    </tr>
+				    <tr>
+				        <th>Price</th>
+				        <td>$4500</td>
+				    </tr>
+				</table>
 
-			    </tr>
-			</table>
-
-			<button type="button" class="btn btn-success allbuttons btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+			<button type="button" class="btn btn-success allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
   			<i class="fas fa-thumbs-up fa-lg"></i>
 			</button>
-			<button type="button" class="btn btn-danger btn-sm allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+			<button type="button" class="btn btn-danger allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
   			<i class="fas fa-thumbs-down fa-lg"></i>
 			</button>
             <!--Text-->
@@ -221,27 +236,29 @@
           <div class="card-body px-2">
 
             <!--Title-->
-			<table class="table maintable mx-0 mt-0 mb-2">
-			  <tbody>
-			    <tr>
-			      <th scope="row" class="tablehead lefttable">Seller Rating</th>
-			      	<td class="tablecentertext"><span class="badge badge-pill badge-success allbadge">8.0</span></td>
-			    </tr>
-			    <tr>
-			      <th scope="row" class="tablehead lefttable">Transmission</th>
-			      <td class="tablecentertext">Automatic</td>
-			    </tr>
-			    <tr>
-			      <th scope="row" class="tablehead lefttable">Year</th>
-			      <td class="tablecentertext">2010</td>
+				<table>
+				    <tr>
+				        <th>Seller rating</th>
+				        <td><span class="badge badge-pill badge-success allbadge">8.0</span></td>
+				    </tr>
+				    <tr>
+				        <th>Transmission</th>
+				        <td>Automatic</td>
+				    </tr>
+				    <tr>
+				        <th>Year</th>
+				        <td>2010</td>
+				    </tr>
+				    <tr>
+				        <th>Price</th>
+				        <td>$4500</td>
+				    </tr>
+				</table>
 
-			    </tr>
-			</table>
-
-			<button type="button" class="btn btn-success allbuttons btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+			<button type="button" class="btn btn-success allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
   			<i class="fas fa-thumbs-up fa-lg"></i>
 			</button>
-			<button type="button" class="btn btn-danger btn-sm allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+			<button type="button" class="btn btn-danger allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
   			<i class="fas fa-thumbs-down fa-lg"></i>
 			</button>
             <!--Text-->
@@ -269,27 +286,29 @@
           <div class="card-body px-2">
 
             <!--Title-->
-			<table class="table maintable mx-0 mt-0 mb-2">
-			  <tbody>
-			    <tr>
-			      <th scope="row" class="tablehead lefttable">Seller Rating</th>
-			      	<td class="tablecentertext"><span class="badge badge-pill badge-success allbadge">8.0</span></td>
-			    </tr>
-			    <tr>
-			      <th scope="row" class="tablehead lefttable">Transmission</th>
-			      <td class="tablecentertext">Automatic</td>
-			    </tr>
-			    <tr>
-			      <th scope="row" class="tablehead lefttable">Year</th>
-			      <td class="tablecentertext">2010</td>
+				<table>
+				    <tr>
+				        <th>Seller rating</th>
+				        <td><span class="badge badge-pill badge-success allbadge">8.0</span></td>
+				    </tr>
+				    <tr>
+				        <th>Transmission</th>
+				        <td>Automatic</td>
+				    </tr>
+				    <tr>
+				        <th>Year</th>
+				        <td>2010</td>
+				    </tr>
+				    <tr>
+				        <th>Price</th>
+				        <td>$4500</td>
+				    </tr>
+				</table>
 
-			    </tr>
-			</table>
-
-			<button type="button" class="btn btn-success allbuttons btn-sm" data-toggle="button" aria-pressed="false" autocomplete="off">
+			<button type="button" class="btn btn-success allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
   			<i class="fas fa-thumbs-up fa-lg"></i>
 			</button>
-			<button type="button" class="btn btn-danger btn-sm allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+			<button type="button" class="btn btn-danger allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
   			<i class="fas fa-thumbs-down fa-lg"></i>
 			</button>
             <!--Text-->
@@ -303,8 +322,326 @@
       <!-- Card deck -->
     </div>
 
+        <div class="container">
 
+            <!-- Card deck -->
+      <div class="card-deck">
 
+        <!-- Card -->
+        <div class="card mb-4">
+
+          <!--Card image-->
+          <div class="container px-0 maincontain">
+          	<div class="view overlay">
+          		<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/3/36/2017_Honda_Civic_VTi-S_sedan_%282018-10-29%29_01.jpg" alt="Card image cap">
+            	<a href="#!">
+              		<div class="mask rgba-white-slight"></div>
+            	</a>
+          	</div>
+          	
+          </div>
+
+          <!--Card content-->
+          <div class="card-body px-2">
+
+            <!--Title-->
+				<table>
+				    <tr>
+				        <th>Seller rating</th>
+				        <td><span class="badge badge-pill badge-success allbadge">8.0</span></td>
+				    </tr>
+				    <tr>
+				        <th>Transmission</th>
+				        <td>Automatic</td>
+				    </tr>
+				    <tr>
+				        <th>Year</th>
+				        <td>2010</td>
+				    </tr>
+				    <tr>
+				        <th>Price</th>
+				        <td>$4500</td>
+				    </tr>
+				</table>
+
+			<button type="button" class="btn btn-success allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-up fa-lg"></i>
+			</button>
+			<button type="button" class="btn btn-danger allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-down fa-lg"></i>
+			</button>
+            <!--Text-->
+
+          </div>
+
+        </div>
+        <!-- Card -->
+
+        <!-- Card -->
+        <div class="card mb-4">
+
+          <!--Card image-->
+          <div class="container px-0 maincontain">
+          	<div class="view overlay">
+          		<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/3/36/2017_Honda_Civic_VTi-S_sedan_%282018-10-29%29_01.jpg" alt="Card image cap">
+            	<a href="#!">
+              		<div class="mask rgba-white-slight"></div>
+            	</a>
+          	</div>
+          	
+          </div>
+
+          <!--Card content-->
+          <div class="card-body px-2">
+
+            <!--Title-->
+				<table>
+				    <tr>
+				        <th>Seller rating</th>
+				        <td><span class="badge badge-pill badge-success allbadge">8.0</span></td>
+				    </tr>
+				    <tr>
+				        <th>Transmission</th>
+				        <td>Automatic</td>
+				    </tr>
+				    <tr>
+				        <th>Year</th>
+				        <td>2010</td>
+				    </tr>
+				    <tr>
+				        <th>Price</th>
+				        <td>$4500</td>
+				    </tr>
+				</table>
+
+			<button type="button" class="btn btn-success allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-up fa-lg"></i>
+			</button>
+			<button type="button" class="btn btn-danger allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-down fa-lg"></i>
+			</button>
+            <!--Text-->
+
+          </div>
+
+        </div>
+        <!-- Card -->
+
+        <!-- Card -->
+        <div class="card mb-4">
+
+          <!--Card image-->
+          <div class="container px-0 maincontain">
+          	<div class="view overlay">
+          		<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/3/36/2017_Honda_Civic_VTi-S_sedan_%282018-10-29%29_01.jpg" alt="Card image cap">
+            	<a href="#!">
+              		<div class="mask rgba-white-slight"></div>
+            	</a>
+          	</div>
+          	
+          </div>
+
+          <!--Card content-->
+          <div class="card-body px-2">
+
+            <!--Title-->
+				<table>
+				    <tr>
+				        <th>Seller rating</th>
+				        <td><span class="badge badge-pill badge-success allbadge">8.0</span></td>
+				    </tr>
+				    <tr>
+				        <th>Transmission</th>
+				        <td>Automatic</td>
+				    </tr>
+				    <tr>
+				        <th>Year</th>
+				        <td>2010</td>
+				    </tr>
+				    <tr>
+				        <th>Price</th>
+				        <td>$4500</td>
+				    </tr>
+				</table>
+
+			<button type="button" class="btn btn-success allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-up fa-lg"></i>
+			</button>
+			<button type="button" class="btn btn-danger allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-down fa-lg"></i>
+			</button>
+            <!--Text-->
+
+          </div>
+
+        </div>
+        <!-- Card -->
+
+      </div>
+      <!-- Card deck -->
+    </div>
+
+        <div class="container">
+
+            <!-- Card deck -->
+      <div class="card-deck">
+
+        <!-- Card -->
+        <div class="card mb-4">
+
+          <!--Card image-->
+          <div class="container px-0 maincontain">
+          	<div class="view overlay">
+          		<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/3/36/2017_Honda_Civic_VTi-S_sedan_%282018-10-29%29_01.jpg" alt="Card image cap">
+            	<a href="#!">
+              		<div class="mask rgba-white-slight"></div>
+            	</a>
+          	</div>
+          	
+          </div>
+
+          <!--Card content-->
+          <div class="card-body px-2">
+
+            <!--Title-->
+				<table>
+				    <tr>
+				        <th>Seller rating</th>
+				        <td><span class="badge badge-pill badge-success allbadge">8.0</span></td>
+				    </tr>
+				    <tr>
+				        <th>Transmission</th>
+				        <td>Automatic</td>
+				    </tr>
+				    <tr>
+				        <th>Year</th>
+				        <td>2010</td>
+				    </tr>
+				    <tr>
+				        <th>Price</th>
+				        <td>$4500</td>
+				    </tr>
+				</table>
+
+			<button type="button" class="btn btn-success allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-up fa-lg"></i>
+			</button>
+			<button type="button" class="btn btn-danger allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-down fa-lg"></i>
+			</button>
+            <!--Text-->
+
+          </div>
+
+        </div>
+        <!-- Card -->
+
+        <!-- Card -->
+        <div class="card mb-4">
+
+          <!--Card image-->
+          <div class="container px-0 maincontain">
+          	<div class="view overlay">
+          		<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/3/36/2017_Honda_Civic_VTi-S_sedan_%282018-10-29%29_01.jpg" alt="Card image cap">
+            	<a href="#!">
+              		<div class="mask rgba-white-slight"></div>
+            	</a>
+          	</div>
+          	
+          </div>
+
+          <!--Card content-->
+          <div class="card-body px-2">
+
+            <!--Title-->
+				<table>
+				    <tr>
+				        <th>Seller rating</th>
+				        <td><span class="badge badge-pill badge-success allbadge">8.0</span></td>
+				    </tr>
+				    <tr>
+				        <th>Transmission</th>
+				        <td>Automatic</td>
+				    </tr>
+				    <tr>
+				        <th>Year</th>
+				        <td>2010</td>
+				    </tr>
+				    <tr>
+				        <th>Price</th>
+				        <td>$4500</td>
+				    </tr>
+				</table>
+
+			<button type="button" class="btn btn-success allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-up fa-lg"></i>
+			</button>
+			<button type="button" class="btn btn-danger allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-down fa-lg"></i>
+			</button>
+            <!--Text-->
+
+          </div>
+
+        </div>
+        <!-- Card -->
+
+        <!-- Card -->
+        <div class="card mb-4">
+
+          <!--Card image-->
+          <div class="container px-0 maincontain">
+          	<div class="view overlay">
+          		<img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/commons/3/36/2017_Honda_Civic_VTi-S_sedan_%282018-10-29%29_01.jpg" alt="Card image cap">
+            	<a href="#!">
+              		<div class="mask rgba-white-slight"></div>
+            	</a>
+          	</div>
+          	
+          </div>
+
+          <!--Card content-->
+          <div class="card-body px-2">
+
+            <!--Title-->
+				<table>
+				    <tr>
+				        <th>Seller rating</th>
+				        <td><span class="badge badge-pill badge-success allbadge">8.0</span></td>
+				    </tr>
+				    <tr>
+				        <th>Transmission</th>
+				        <td>Automatic</td>
+				    </tr>
+				    <tr>
+				        <th>Year</th>
+				        <td>2010</td>
+				    </tr>
+				    <tr>
+				        <th>Price</th>
+				        <td>$4500</td>
+				    </tr>
+				</table>
+
+			<button type="button" class="btn btn-success allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-up fa-lg"></i>
+			</button>
+			<button type="button" class="btn btn-danger allbuttons" data-toggle="button" aria-pressed="false" autocomplete="off">
+  			<i class="fas fa-thumbs-down fa-lg"></i>
+			</button>
+            <!--Text-->
+
+          </div>
+
+        </div>
+        <!-- Card -->
+
+      </div>
+      <!-- Card deck -->
+    </div>
+    <div class="container d-flex justify-content-center mb-5">
+    	<button type="button" class="btn btn-light">Load More...</button>
+    </div>
 
 
 
@@ -315,6 +652,77 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+
+  <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#mainNav");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#navhead1");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#navhead2");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#navhead3");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#navhead4");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#navhead5");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#navhead6");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $("#navhead7");
+                $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
 </body>
 
 </html>
