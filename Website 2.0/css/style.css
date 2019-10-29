@@ -1,0 +1,47 @@
+#mainNav {
+	background-color: #ffffff;
+}
+
+.maincontain {
+	height: 45%;
+}
+
+.allbadge {
+	font-size: 1.3rem;
+}
+
+.tablehead {
+	border-right:1px solid #c8ced3;
+}
+.maintable {
+	table-layout: fixed;
+}
+.allbutons {
+	color:white;
+	font-size: .8rem;
+}
+.tablecentertext{
+	text-align: center;
+}
+.lefttable {
+	background-color: black;
+	color: white;
+	width: 35%;
+}
+
+.topdropdown {
+	background-color: rgba(0,0,0,0);
+	border-right: 1.5px solid #c8ced3;
+	border-radius: 0px;
+}
+.firstdropdown {
+	border-right: 1.5px solid #c8ced3;
+	border-left: 1.5px solid #c8ced3;
+}
+
+body {
+	background-color: #e6e6e6;
+}
+.secondnav {
+	background-color: #f5f5f5;
+}
