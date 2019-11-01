@@ -84,9 +84,12 @@ nav #navhead7.scrolled {
 
 table {
   border-collapse: separate;
-  border-spacing: 0;
+  border-spacing: 0px;
   width:100%;
   text-align: center;
+}
+.special {
+	border-spacing: 1px;
 }
 table tr th,
 table tr td {
