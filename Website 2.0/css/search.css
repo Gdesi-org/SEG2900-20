@@ -1,0 +1,31 @@
+#mainNav {
+	background-color: #ffffff;
+}
+
+#gdesi {
+	margin-top: 10%;
+}
+
+li a {
+	font-size: 1.2rem;
+	font-family: Lato;
+	font-weight: 300;
+}
+
+.mainsearch {
+	width: 35%;
+	background: url("search.png");
+	height:46px;
+	padding-left:25px;   
+}
+
+.postalsearch {
+	width: 15%;
+	height: 46px;
+}
+
+p {
+	font-size: 1.4rem;
+	font-weight: 400;
+}
+
