@@ -13,14 +13,33 @@
   <!-- Material Design Bootstrap -->
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Open+Sans:300,400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Open+Sans:300,400,500,700&display=swap" rel="stylesheet">
   <link href="css/home.css" rel="stylesheet">
+
+</body>
 </head>
 
 <body>
 
+<div>
+  <ul class="loading">
+    <li id='a'></li>
+    <li id='b'></li>
+    <li id='c'></li>
+    <li id='d'></li>
+    <li id='e'></li>
+    <li id='f'></li>
+    <li id='g'></li>
+    <li id='h'></li>
+    <li id='i'></li>
+  </ul>
 
-        <!--Navbar-->
+</div>
+
+
+
+<span class="body">
+          <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-light py-0" id="mainNav">
 
       <!-- Navbar brand -->
@@ -73,16 +92,124 @@
 
     </nav>
     <!--/.Navbar-->
+    <div id="firstdiv">
+      <div class="container-fluid seconddiv">
+        <div class="row seconddiv">
+          <div class="col-8 firsttext">
+            <h1>
+              <a href="" class="typewrite" data-period="2000" data-type='[ "","Would you like to save time?", "Would you like to save money?", "Why  shouldn&#39t saving be easy?" ]'>
+              </a>
+            </h1>
+            <p>Meet gdesi, your online tool to navigate thousands of online products in one swift search</p>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+                        <!-- Card -->
+            <div class="card maincard mr-5">
+              <!-- Card content -->
+              <div class="card-body">
 
+                <!-- Title -->
+                <h4 class="card-title mb-4">Create an account</h4>
+                <!-- Small input -->
+                <input class="form-control form-control-sm mb-3" type="text" placeholder="Email">
+                <!-- Small input -->
+                <input class="form-control form-control-sm mb-4" type="password" placeholder="Password">
+                <!-- Button -->
+                <a href="#" class="btn btn-primary allbtn mx-0 mb-4">Sign Up</a>
+                <h5 class="mb-4">OR</h5>
+                <a href="search.html" class="btn btn-primary allbtn mx-0">Show me around!</a>
 
+              </div>
+
+            </div>
+            <!-- Card -->
+          </div>
+        </div>
+      </div>
+    </div>
+</span>
+
+  <script type="text/javascript">
+    var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+  </script>
+
+  <script type="text/javascript" src="js/three.r92.min.js"></script>
+  <script type="text/javascript" src="js/vanta.net.min.js"></script>
+  <script>
+    VANTA.NET({
+      el: "#firstdiv",
+        color: 0xcacaca,
+        backgroundColor: 0x55bcc9
+    })
+  </script>
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript">
+      $(".loading").delay(2500).fadeOut(500);
+      $(".body").delay(3100).fadeIn();
+  </script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" src="js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+
 </body>
 
 </html>

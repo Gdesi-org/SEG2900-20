@@ -85,7 +85,7 @@
       <div class="container-fluid active-cyan-4 mb-4 w-100 d-flex justify-content-center align-items-center">
         <input class="form-control mainsearch mr-2 z-depth-1" type="text" placeholder="What are you looking for?" aria-label="Search">
         <input class="form-control postalsearch z-depth-1" type="text" placeholder="Postal Code" aria-label="Postal Code">
-        <a href="Product_Search.html" class="btn btn-primary">Search</a>
+        <a href="Product_Search.html" class="btn btn-primary searchbtn"  data-toggle="popover" title="Over Here!" data-content="Click me to see a simulated search of a Honda Civic!">Search</a>
       </div>
 
     </div>
@@ -99,6 +99,9 @@
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript">
+    $('.searchbtn').popover("show")
+  </script>
 
 
 </body>
