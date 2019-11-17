@@ -1,6 +1,14 @@
 #mainNav {
 	background-color: #ffffff;
+	width: 100%;
 }
+
+li a {
+	font-size: 1.2rem;
+	font-family: Lato;
+	font-weight: 300;
+}
+
 
 .maincontain {
 	height: 45%;
@@ -46,41 +54,8 @@ body {
 }
 .secondnav {
 	background-color: #f5f5f5;
-	margin-top: 4.4rem;
 }
 
-#mainNav.scrolled {
-	background-color: black;
-	transition: background-color 500ms;
-}
-nav #navhead1.scrolled {
-	color:white;
-	transition: color 500ms;
-}
-nav #navhead2.scrolled {
-	color:white;
-	transition: color 500ms;
-}
-nav #navhead3.scrolled {
-	color:white;
-	transition: color 500ms;
-}
-nav #navhead4.scrolled {
-	color:white;
-	transition: color 500ms;
-}
-nav #navhead5.scrolled {
-	color:white;
-	transition: color 500ms;
-}
-nav #navhead6.scrolled {
-	color:white;
-	transition: color 500ms;
-}
-nav #navhead7.scrolled {
-	color:white;
-	transition: color 500ms;
-}
 
 table {
   border-collapse: separate;
