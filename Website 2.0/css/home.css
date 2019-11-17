@@ -54,6 +54,7 @@ li a {
 #firstdiv {
 	height: 48rem;
 	width: 100%;
+  overflow: hidden;
 }
 
 
