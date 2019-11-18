@@ -8,3 +8,18 @@ li a {
 	font-weight: 300;
 }
 
+.group {
+	text-align: justify;
+	width: 200px;
+	display:inline-block;
+}
+
+.group img {
+	width: 200px;
+	display:inline-block;
+	margin: 0 auto;
+}
+div.scroll {
+	overflow: auto;
+    white-space: nowrap;
+}
