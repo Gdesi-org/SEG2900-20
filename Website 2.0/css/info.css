@@ -8,3 +8,13 @@ li a {
 	font-weight: 300;
 }
 
+div.leftMargin {
+	margin-left: 40%;
+	margin-right: -40%;
+}
+
+p.leftMargin {
+	margin-left: -5%;
+	margin-right: 5%;
+}
+
